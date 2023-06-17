@@ -1,0 +1,19 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is namaste-react learning by Shubham Kumar",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namaste-shubham/namaste-react.git"
+  },
+  "author": "Akshay Saini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namaste-shubham/namaste-react/issues"
+  },
+  "homepage": "https://github.com/namaste-shubham/namaste-react#readme"
+}
