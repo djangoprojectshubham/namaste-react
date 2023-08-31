@@ -18,11 +18,11 @@ const Header = () => {
   return (
     <div className="flex justify-between shadow-lg bg-orange-300">
       <div>
-        <img className="w-32" src={LOGO_URL}></img>
+        <img data-testid="logo" className="w-32" src={LOGO_URL}></img>
       </div>
       <div>
         <ul className="flex p-4 m-4 ">
-          <li className="p-4" style={{ color }}>
+          <li className="p-4" data-testid="online-status" style={{ color }}>
             Online Status: {onlineStatus ? "Active" : "Inactive"}
           </li>
           <li className="p-4 ">
@@ -39,7 +39,9 @@ const Header = () => {
           </li>
 
           <li className="p-4 font-bold">
-            <Link to="/cart">Cart- {cartItems.length}</Link>
+            <Link to="/cart" data-testid="cart-item">
+              Cart- {cartItems.length}
+            </Link>
           </li>
           <li className="p-4 text-red-600">{user.name}</li>
           <button
